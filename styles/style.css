@@ -1,0 +1,255 @@
+@font-face {
+  font-family: Pacifico;
+  src: url("/assets/fonts/Pacifico-Regular.ttf");
+}
+@font-face {
+  font-family: Arch;
+  src: url("/assets/fonts/ArchitectsDaughter-Regular.ttf");
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(hsla(240,80%,90%), hsla(80,80%,90%));
+  font-family: Monospace;
+}
+h1, h2 {
+  font-family: Pacifico;
+}
+.product p {
+  font-family: Arch;
+}
+a, #submit {
+  border: 2px solid #fff;
+}
+#header {
+  position: fixed;
+  top: 3px;
+  border: 3px solid #fff;
+  background: transparent;
+  z-index: 1;
+  backdrop-filter: blur(18px);
+}
+#nav-list {
+  list-style: none;
+}
+#intro {
+  margin: 110px 0;
+  text-align: center;
+}
+#products h2 {
+  text-align: center;
+}
+.product a {
+  display: flex;
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+footer {
+  font-size: 14px;
+  background: #7c7c7c;
+  margin: -5px;
+  margin-bottom: -18px;
+}
+#container {
+  display: flex;
+  padding: 50px;
+}
+#footer-list {
+  list-style: none;
+  text-align: center;
+}
+#footer-list li a {
+  color: black;
+  border: none;
+}
+#cp {
+  font-size: 12px;
+  color: white;
+  text-align: center;
+}
+
+/*Mobile Devices*/
+
+@media only screen and (max-width:768px) {
+#header {
+  width: 95vw;
+  height: 6vh;
+}
+#viewtop {
+  display: flex;
+  justify-content: space-between;
+}
+#header-img {
+  max-height: 5vh;
+}
+#nav-btn {
+  color: #fff;
+  background: #000;
+  transform: rotate(90deg);
+  min-width: 5vh;
+}
+#nav-list {
+  display: none;
+}
+ .nav-link {
+  position: fixed;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  background: #000;
+  border: 3px solid #fff;
+  text-decoration: none;
+  width: 90px;
+  height: 90px;
+  line-height: 6;
+  border-radius: 50%;
+}
+#nav1 {
+  transform: translate(110px,-50px);
+}
+#nav2 {
+  transform: translate(160px,40px);
+}
+#nav3 {
+  transform: translate(230px, 115px);
+}
+#intro img {
+  max-width: 100%;
+  height: auto;
+}
+.product {
+  margin-top: 60px;
+}
+.product video {
+  width: 100%;
+  height: auto;
+}
+.product a {
+  width: 100%;
+  height: 6vh;
+}
+#join-us {
+  margin: 90px 0;
+  text-align: center;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#email {
+  width: 75vw;
+  height: 35px;
+  text-align: center;
+}
+#submit {
+  display: block;
+  width: 60vw;
+  height: 6vh;
+  background: #000;
+  color: white;
+  }
+}
+
+
+/*Desktop Devices*/
+
+@media only screen and (min-width: 769px) {
+  body {
+    width: 100%;
+  }
+  #header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #header-img {
+    width: 40%;
+    float: left;
+    transform: scale(2.5);
+  }
+  #nav-btn {
+    visibility: hidden;
+  }
+  #nav-list {
+    display: flex;
+    margin-right: -70px;
+  }
+  #nav-list li a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 8px;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.5;
+    background: #fff;
+    border: 3px solid #000;
+    width: 80px;
+    height: 30px;
+  }
+  #images img {
+    margin: 40px 20px;
+    width: 20%;
+    height: 120px;
+  }
+  .product {
+    margin: 20px;
+    text-align: center;
+  }
+  .product a {
+    position: relative;
+    left: 33%;
+    width: 30%;
+    height: 40px;
+  }
+  #videos {
+    display: grid;
+    grid-template-areas:
+    "video1 video2"
+    "video3 video3";
+  }
+  video {
+    max-width: 80%;
+    height: auto;
+    margin: 30px;
+  }
+  #join-us {
+    text-align: center;
+    margin: 150px 0;
+  }
+  #join-us h2 {
+    margin:0 0 70px 0;
+  }
+  #email {
+    height: 40px;
+    width: 60%;
+    text-align: center;
+  }
+  #submit {
+    display: block;
+    position: relative;
+    background: #000;
+    color: #fff;
+    width: 30%;
+    height: 40px;
+    left: 35%;
+  }
+  footer {
+    width: 103%;
+    margin-left: -15px;
+    background: #7c7c7c;
+  }
+  #container {
+    padding-left: 30%;
+  }
+}
