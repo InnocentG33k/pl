@@ -10,7 +10,4 @@ $(window).resize(function() {
     $("#nav-list").show();
     $("#nav-list").css("display","flex");
   }
-  if($(window).width() <= 768) {
-    $("#nav-list").hide();
-  }
 });
