@@ -17,3 +17,6 @@ $(window).resize(function() {
     $("#nav-list").hide();
   }
 });
+if ($(window).width() >= 769) {
+    $("#nav-list").css("display","flex");
+}
