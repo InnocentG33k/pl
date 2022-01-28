@@ -11,12 +11,9 @@ $(function() {
 $(window).resize(function() {
   if ($(this).width() >= 769) {
     $("#nav-list").show();
-    $("#nav-list").css("display","flex")
+    $("#nav-list").css("display","flex");
   }
   if($(window).width() <= 768) {
     $("#nav-list").hide();
   }
 });
-if ($(window).width() >= 769) {
-    $("#nav-list").css("display","flex");
-}
