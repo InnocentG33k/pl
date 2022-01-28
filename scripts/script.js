@@ -17,3 +17,8 @@ $(window).resize(function() {
     $("#nav-list").hide();
   }
 });
+if ($(window).width() >= 769) {
+    $(".nav-link").click(function() {
+    $("#nav-link").css("display","flex");
+});
+}
