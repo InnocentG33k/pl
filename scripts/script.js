@@ -3,9 +3,6 @@ $(function() {
   $("#nav-btn").click(function(){
     $("#nav-list").slideToggle(200);
   });
-  $(".nav-link").click(function(){
-    $("#nav-list").toggle();
-  });
 });
 }
 $(window).resize(function() {
@@ -17,8 +14,3 @@ $(window).resize(function() {
     $("#nav-list").hide();
   }
 });
-if ($(window).width() >= 769) {
-    $(".nav-link").click(function() {
-    $("#nav-link").css("display","flex");
-});
-}
